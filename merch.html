@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Anime is the way</title>
+
+        <script>
+            function show(form1){
+                var arr = [];
+                for (var i in form1.item){
+                    if(form1.item[i].checked){
+                        arr.push(form1.item[i].value);
+                    }
+                }
+                alert("Purchased : "+arr);
+                return arr;
+            }
+        </script>
+
+    </head>
+    <body>
+        
+        <div id="menu">
+            <h1>ANIMANIA</h1>
+            <a href="index.html">
+                <img src="images/icon-home.png" style="padding-left:150px"/>
+            </a>
+            <a href="contact-us.html"><img src="images/icon-contact.png"/></a>
+            <a href="about-us.html"><img src="images/icon-info.png"/></a>
+            <a href="sign-up.html"><img src="images/icon-user.png" style="float:right"/></a>
+        </div>
+        <br/><br/><br/><br/><br/><br/>
+
+        <h2>Anime Merch, Nice Choice!</h2>
+        <h3> Have a look at our awesome selection below.</h3>
+
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="checkbox" name="item" value="luffy" />
+                    <a href="item-luffy.html"><img src="images/luffy-1.jpg"/></a>
+                    <p>
+                        ADVENTUROUS!
+                        <br/><br/>
+                        Go exploring with Monkey D Luffy.
+                    </p>
+                    <br/>
+                    <h3>Price: R100.00</h3>
+                </div>
+        
+                <div class="col">
+                    <input type="checkbox" name="item" value="natsu" />
+                    <a href="item-natsu.html"><img src="images/natsu-1.jpeg"/></a>
+                    <p>
+                        MAGICAL!
+                        <br/><br/>
+                        Cast powerful magic with Natsu Dragneel.
+                    </p>
+                    <br/>
+                    <h3>Price: R100.00</h3>
+                </div>
+    
+                <div class="col">
+                    <input type="checkbox" name="item" value="ichigo" />
+                    <a href="item-ichigo.html"><img src="images/ichi-1.jpg"/></a>
+                    <p>
+                        SUPERNATURAL!
+                        <br/><br/>
+                        Clense evil spirits with Ichigo Kurosaki.
+                    </p>
+                    <br/>
+                    <h3>Price: R100.00</h3>
+                </div>
+    
+                <div class="col">
+                    <input type="checkbox" name="item" value="naruto" />
+                    <a href="item-naruto.html"><img src="images/naru-1.jpg"/></a>
+                    <p>
+                        CHARASMATIC!
+                        <br/><br/>
+                        Win over friends and enemies with Naruto Uzumaki.
+                    </p>
+                    <br/>
+                    <h3>Price: R100.00</h3>
+                </div>
+    
+                <div class="col">
+                    <input type="checkbox" name="item" value="goku" />
+                    <a href="item-goku.html"><img src="images/goku-1.jpg"/></a>
+                    <p>
+                        UNSTOPPABLE!
+                        <br/>
+                        Battle the strongest fighters in the universe with Goku.
+                    </p>
+                    <br/>
+                    <h3>Price: R100.00</h3>
+                </div>
+    
+            </div>
+            <br/><br/>
+            <button onclick="show(this.form)">Purchase Selected</button>
+        </form>
+
+    </body>
+</html>

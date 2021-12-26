@@ -1,0 +1,103 @@
+
+html{
+    background-color: darkslategrey;
+    text-align: center;
+    color: black;
+}
+
+.row img{
+    width: 50%;
+}
+
+.col{
+    float: left;
+    width: 45%;
+    background-color: black;
+    color:white;
+    margin-left: 3%;
+    margin-top:3%;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Clear float after col's*/
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col input{
+    float: left;
+}
+
+.categories img{
+    width: 25%;
+    padding: 20px 20px 20px 20px;
+}
+
+.categories table{
+    width: 90%;
+}
+
+#menu img{
+    width: 50px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-left: 0px;
+    float: left;
+}
+
+h2, h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table.format{
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#signup td{
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: bold;
+}
+
+#menu h1{
+    float: left;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 80px;
+    text-decoration: none;
+    padding: 0 0 0 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img{
+    width:100%;
+}
+
+.format.item{
+    border-collapse:collapse;
+}
+
+table.format.item th,td{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.item p{
+    margin-left: 52%;
+    margin-right: 2%;
+}
+
+.logo img{
+    width: 15%;
+}
